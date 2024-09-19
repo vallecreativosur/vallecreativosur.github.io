@@ -194,6 +194,11 @@ footer {
 }
 
 @media (max-width: 480px) {
+body {
+background-color:red
+}
+
+
   /* Espaciado y ajuste de imágenes aún más en pantallas pequeñas */
   .gallery-item {
     padding: 10px;
