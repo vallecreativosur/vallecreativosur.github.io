@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,40 +9,49 @@
   <meta name="author" content="Tu Nombre">
   <title>Página Artística</title>
 
-<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
 
   <!-- Header fino con menú hamburguesa -->
   <header>
-    <h1>  VALLE CREATIVO SUR </h1>
-   <!-- <h1> Valle Creativo Sur </h1>  -->
-
-   <!-- Navegación -->
-  <nav id="navMenu">
-    <a href="index.html">Inicio</a>
-    <a href="galeria.html">Galería</a>
-    <a href="about.html">Sobre mí</a>
-    <a href="contacto.html">Contacto</a>
-  </nav>
-   
+    <div class="logo">
+      <figure>
+        <img src="assets/logo.png" alt="">
+      </figure>
+      <h1>GALERIA DE ARTE <br>PATAGONICA</h1>
+      <!-- <h1> Valle Creativo Sur </h1>  -->
+    </div>
     <div class="menu-toggle" id="menuToggle">
       <span></span>
       <span></span>
       <span></span>
     </div>
+    
+    <div class="navegacion">
+      
+      <nav id="navMenu">
+        <ul>
+          <a href="index.html">Inicio</a>
+          <a href="html/galeria.html">Galería</a>
+          <a href="html/about.html">Sobre mí</a>
+          <a href="html/contacto.html">Contacto</a>
+        </ul>
+      </nav>
+
+    </div>
   </header>
-
-  
-
+ 
   <!-- Layout principal -->
   <main>
     <!-- Aside izquierdo -->
     <aside>
       <p>Contenido adicional en el aside izquierdo.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, dicta in laboriosam ipsam tempore ad facilis quidem. Repellat nulla qui expedita at! Deleniti officia quibusdam minima blanditiis nihil reprehenderit quos!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, dicta in laboriosam ipsam tempore ad facilis quidem. Repellat nulla qui expedita at! Deleniti officia quibusdam minima blanditiis nihil reprehenderit quos!</p>
     </aside>
-
     <!-- Galería principal -->
     <section class="gallery">
       <div class="gallery-item">
@@ -69,13 +79,13 @@
         Imagen 6
       </div>
     </section>
-
     <!-- Aside derecho -->
     <aside>
       <p>Contenido adicional en el aside derecho.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, dicta in laboriosam ipsam tempore ad facilis quidem. Repellat nulla qui expedita at! Deleniti officia quibusdam minima blanditiis nihil reprehenderit quos!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, dicta in laboriosam ipsam tempore ad facilis quidem. Repellat nulla qui expedita at! Deleniti officia quibusdam minima blanditiis nihil reprehenderit quos!</p>
     </aside>
   </main>
-
   <!-- Footer artístico con galería -->
   <footer>
     <div class="footer-gallery">
@@ -88,7 +98,6 @@
     </div>
     <p>© 2024 Mi Página Artística - Todos los derechos reservados</p>
   </footer>
-
   <!-- JavaScript para el menú hamburguesa -->
   <script>
     const menuToggle = document.getElementById('menuToggle');
@@ -98,6 +107,5 @@
       navMenu.classList.toggle('show');
     });
   </script>
-
 </body>
 </html>
