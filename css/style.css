@@ -65,18 +65,14 @@ nav a {
 
 /* Layout principal */
 main {
-  display: flex;
-  gap: 4px;
-  padding: 10px;
+  display: flex;
+  padding: 1rem;
 }
 /* Asides */
 aside {
-  background-color: #000000;
+  background-color: white;
   color: #ffffff;
   flex-basis:15%;
-  padding: 10px;
-  border-radius: 10px;
-  padding:5px;
   font-size:1em;
 }
 
@@ -132,20 +128,16 @@ flex-basis:65%;
 
 /* Footer con galería */
 footer {
-  background-color: #000000;
-  color: rgb(255, 255, 255);
-  padding: 20px 0;
-  text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-weight: bolder;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  text-align: center;
 }
 
 .footer-gallery {
-  display: grid;
+  display:gris;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   gap: 20px;
   justify-content: center;
-  padding: 0 20px;
 }
 
 .footer-gallery div {
