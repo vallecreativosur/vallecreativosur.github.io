@@ -178,7 +178,11 @@ footer {
   }
   main {
     background-color: red;
-  }
+  }
+ aside{
+
+ display:none;
+}
   .gallery-item {
     grid-column: span 1 !important;
   }
