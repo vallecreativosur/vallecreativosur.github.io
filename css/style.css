@@ -5,6 +5,8 @@
 }
 html {
   font-family: monospace;
+  width:100vw;
+
 }
 body {
   font-family: "Arial", sans-serif;
