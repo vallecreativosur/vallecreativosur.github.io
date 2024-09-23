@@ -43,8 +43,7 @@ figure {
   display: flex;
   flex-direction: column;
   align-items: end;
-}
-/* Navbar oculto en mobile */
+}
 nav ul {
   display: flex;
 }
@@ -59,9 +58,7 @@ nav a {
   text-decoration: none;
   color: rgb(251, 255, 0);
   font-size: 15px;
-  font-weight: bold;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
   padding: 10px;
 }
 
@@ -96,10 +93,13 @@ aside {
   flex-basis:15%;
   padding: 10px;
   border-radius: 10px;
+  padding:5px;
 }
+
 section{
-flex-basis:70% auto;
+flex-basis:65%;
 }
+
 /* Galería */
 .gallery {
   display: grid;
@@ -120,17 +120,13 @@ flex-basis:70% auto;
   justify-content: space-around;
   color: #ffffff;
 
-}
-
-
+}
 .gallery-item img {
   width: 100%;
   height: auto;
   border-radius: 8px;
 }
-.gallery h3{
-padding: 10px;
-}
+
 /* Footer con galería */
 footer {
   background-color: #000000;
