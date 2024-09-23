@@ -178,10 +178,7 @@ footer {
   }
   main {
     background-color: red;
-  }
-  aside {
-    display: none;
-  }
+  }
   .gallery-item {
     grid-column: span 1 !important;
   }
@@ -199,7 +196,7 @@ footer {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
   }
 
