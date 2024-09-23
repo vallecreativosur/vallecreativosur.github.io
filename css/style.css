@@ -204,13 +204,11 @@ footer {
     display: flex;
     flex-direction: row;
     text-align: center;
-  }
-
+  }
 figure{border-radius: 77px;}
   header img {
     width: 150px;
-  }
-
+  }
   .logo {
     flex-wrap: wrap;
     justify-content: center;
@@ -219,15 +217,7 @@ figure{border-radius: 77px;}
   body {
     background-color: blue;
   }
-
-  h1 {
-    font-size: 15px;
-    margin-top: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #ffffff;
-  }
-
-  /* Espaciado y ajuste de imágenes aún más en pantallas pequeñas */
+
   .gallery-item {
     padding: 5px;
   }
