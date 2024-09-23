@@ -69,7 +69,7 @@ main {
 }
 /* Asides */
 aside {
-  background-color: white;
+  background-color:white;
   color: #ffffff;
   flex-basis:15%;
   font-size:1em;
@@ -173,11 +173,10 @@ footer {
 /* Responsividad */
 @media (max-width: 768px) {
   body {
-    background-color: rgb(255, 255, 255);
-  }
-
+    background-color: green;
+  }
   main {
-    grid-template-columns: 1fr;
+    background-color: red;
   }
   aside {
     display: none;
