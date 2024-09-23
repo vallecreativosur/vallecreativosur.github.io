@@ -17,14 +17,12 @@ body {
 }
 header {
   width:100%;
-  background-color: yellow;
-  color: black;
+  background-color: black;
+  color: white;
 
-  padding: 20px;
-  text-align: center;
-  font-family: Helvetica, Arial, sans-serif;
+  padding: 10px;
+  text-align: center;
   font-size: 15px;
-  position: relative;
 
   display: flex;
   align-items: center;
