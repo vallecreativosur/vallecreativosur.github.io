@@ -3,11 +3,11 @@
   margin: 0;
   padding: 0;
 }
-html{
-font-family: monospace;
+html {
+  font-family: monospace;
 }
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   background-color: #ffffff;
   color: #ff0000;
   display: flex;
@@ -16,8 +16,8 @@ body {
 }
 /* Header fino */
 header {
-  background-color: #EDFE00;
-  color: rgb(0, 0, 0);
+  background-color: #000000;
+  color: rgb(255, 255, 255);
 
   padding: 20px 20px;
   text-align: center;
@@ -37,10 +37,15 @@ header {
 
 figure {
   border: solid 3px black;
-  margin: 20px;
+}
+
+.navegacion {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 /* Navbar oculto en mobile */
-nav ul{
+nav ul {
   display: flex;
 }
 nav {
@@ -50,12 +55,14 @@ nav {
   flex-wrap: nowrap;
 }
 nav a {
+  display: inline-block;
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: rgb(251, 255, 0);
   font-size: 15px;
   font-weight: bold;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-padding: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 10px;
 }
 
 /* Menú hamburguesa */
@@ -71,7 +78,7 @@ padding: 10px;
 .menu-toggle span {
   height: 3px;
   width: 25px;
-  background-color: white;
+  background-color: rgb(0, 229, 255);
   margin: 4px;
   transition: 0.3s;
 }
@@ -80,17 +87,17 @@ padding: 10px;
 main {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  gap: 25px;
+  gap: 5px;
   flex-grow: 1;
-  padding: 20px;
+  padding: 10px;
 }
 
 /* Asides */
 aside {
-  background-color: #ffffff;
+  background-color: #000000;
   color: #ffffff;
 
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
 }
 
@@ -98,37 +105,40 @@ aside {
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 25px;
+  gap: 10px;
 }
 
 .gallery-item {
-  background-color: #ff8800;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
   border-radius: 10px;
-  padding: 20px;
-  color: rgb(0, 0, 0);
+  padding: 10px;
   text-align: center;
+  align-items: stretch;
   font-size: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  justify-content: space-around;
+  color: #ffffff;
+
 }
 
-.gallery-item:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
-}
 
 .gallery-item img {
   width: 100%;
   height: auto;
   border-radius: 8px;
 }
-
+.gallery h3{
+padding: 10px;
+}
 /* Footer con galería */
 footer {
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
+  background-color: #000000;
+  color: rgb(255, 255, 255);
   padding: 20px 0;
   text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bolder;
 }
 
@@ -141,7 +151,7 @@ footer {
 }
 
 .footer-gallery div {
-  background-color: #ff0303;
+  background-color: #ffffff;
   border-radius: 8px;
   height: 100px;
 }
@@ -174,31 +184,9 @@ footer {
 /* Responsividad */
 @media (max-width: 768px) {
   body {
-    background-color: rgb(60, 255, 0)
+    background-color: rgb(255, 255, 255);
   }
-  .logo{
-    display: flex;
-  }
-  .menu-toggle {
-    display: flex;
-    flex-direction: column;
-  }
-  nav {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ff7700;
-    color: #000000;
-    padding: 10px;
-    position: absolute;
-    width: 100%;
-    top: 50px;
-    left: 0;
-  }
-  nav.show {
-    display: flex;
-    flex-direction: column;
-  }
+
   main {
     grid-template-columns: 1fr;
   }
@@ -213,28 +201,43 @@ footer {
     width: 100%;
     height: auto;
   }
+  nav a{font-weight: 350;}
 }
 
 @media (max-width: 480px) {
-  .logo{
+  header {
+    padding: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+figure{border-radius: 77px;}
+  header img {
+    width: 150px;
+  }
+
+  .logo {
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
   }
   body {
-    background-color: red
+    background-color: rgb(0, 0, 0);
   }
-  
+
   h1 {
     font-size: 15px;
+    margin-top: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #000000;
+    color: #ffffff;
   }
 
   /* Espaciado y ajuste de imágenes aún más en pantallas pequeñas */
   .gallery-item {
-    padding: 10px;
+    padding: 5px;
   }
 
   .gallery-item img {
@@ -242,11 +245,70 @@ footer {
     height: auto;
   }
 
-  footer {
-    font-size: 14px;
-  }
-
   .footer-gallery div {
     height: 80px;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav.show {
+    display: flex;
+    flex-direction: column;
+  }
+  .navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Navbar oculto en mobile */
+  nav ul {
+    display: flex;
+  }
+  nav {
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+  }
+  nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(251, 255, 0);
+    font-size: 15px;
+    font-weight: 100;
+  }
+  /* Menú hamburguesa */
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    margin-bottom: 10px;
+    cursor: move;
+  }
+  .menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background-color: rgb(255, 255, 255);
+    margin: 4px;
+    transition: 0.3s;
+  }
+  .menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background-color: rgb(255, 255, 255);
+    margin: 4px;
+    transition: 0.3s;
+  }
+  footer {
+    font-size: 14px;
   }
 }
