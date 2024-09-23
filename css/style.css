@@ -85,18 +85,15 @@ nav a {
 
 /* Layout principal */
 main {
-  display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
-  gap: 5px;
-  flex-grow: 1;
+  display: flex;
+  gap: 4px;
   padding: 10px;
-}
-
+}
 /* Asides */
 aside {
   background-color: #000000;
   color: #ffffff;
-
+  flex-basis:2;
   padding: 10px;
   border-radius: 10px;
 }
