@@ -63,24 +63,6 @@ nav a {
   padding: 10px;
 }
 
-/* Menú hamburguesa */
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  right: 20px;
-  top: 15px;
-  cursor: pointer;
-}
-
-.menu-toggle span {
-  height: 3px;
-  width: 25px;
-  background-color: rgb(0, 229, 255);
-  margin: 4px;
-  transition: 0.3s;
-}
-
 /* Layout principal */
 main {
   display: flex;
@@ -128,6 +110,25 @@ flex-basis:65%;
   height: auto;
   border-radius: 8px;
 }
+
+/* Menú hamburguesa */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background-color: rgb(0, 229, 255);
+  margin: 4px;
+  transition: 0.3s;
+}
+
 
 /* Footer con galería */
 footer {
