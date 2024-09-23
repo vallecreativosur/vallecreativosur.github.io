@@ -14,7 +14,7 @@ body {
   width:100%;
 }
 header {
-  display:inline-block;
+  display:block;
   width:100%;
   background-color: black;
   color: white;
