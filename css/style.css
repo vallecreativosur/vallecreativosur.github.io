@@ -93,11 +93,13 @@ main {
 aside {
   background-color: #000000;
   color: #ffffff;
-  flex-basis:2;
+  flex-basis:15%;
   padding: 10px;
   border-radius: 10px;
 }
-
+section{
+flex-basis:70% auto;
+}
 /* Galería */
 .gallery {
   display: grid;
